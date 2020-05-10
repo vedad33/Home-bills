@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 5, 2020 5:52:23 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="vedadracuni.Sabaha" table="sabaha" catalog="rezije" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="datum" type="string">
+            <column name="datum" length="10" />
+        </property>
+        <property name="struja" type="java.lang.Double">
+            <column name="struja" precision="22" scale="0" />
+        </property>
+        <property name="oki" type="java.lang.Double">
+            <column name="oki" precision="22" scale="0" />
+        </property>
+        <property name="komunalije" type="java.lang.Double">
+            <column name="komunalije" precision="22" scale="0" />
+        </property>
+        <property name="mojatv" type="java.lang.Double">
+            <column name="mojatv" precision="22" scale="0" />
+        </property>
+        <property name="plin" type="java.lang.Double">
+            <column name="plin" precision="22" scale="0" />
+        </property>
+        <property name="voda" type="java.lang.Double">
+            <column name="voda" precision="22" scale="0" />
+        </property>
+        <property name="kreditnaKartica" type="java.lang.Double">
+            <column name="kreditna_kartica" precision="22" scale="0" />
+        </property>
+        <property name="grijanje" type="java.lang.Double">
+            <column name="grijanje" precision="22" scale="0" />
+        </property>
+        <property name="garaza" type="java.lang.Double">
+            <column name="garaza" precision="22" scale="0" />
+        </property>
+           <property name="ukupno" type="java.lang.String">
+            <column name="ukupno" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>
